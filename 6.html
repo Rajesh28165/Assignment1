@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Navigation Menu</title>
+    <style>
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #000;
+        }
+
+        nav a[aria-current="page"] {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accessible Navigation Menu -->
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Home Section</h1>
+        <p>Welcome to the homepage of the exhibit!</p>
+    </section>
+
+    <section id="about">
+        <h1>About Section</h1>
+        <p>Learn more about the exhibit in this section.</p>
+    </section>
+
+    <section id="gallery">
+        <h1>Gallery Section</h1>
+        <p>View images and videos from the exhibit here.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Section</h1>
+        <p>Get in touch with us for more information.</p>
+    </section>
+
+</body>
+</html>
